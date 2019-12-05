@@ -1,24 +1,29 @@
-#snow{
-	background: none;
-	pointer-events: none;
-    background-image: url($s1), url($s2), url($s3);
-    background-size: 250px 250px, 200px 200px, 150px 150px;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-    z-index:150;
+@if $snow_type == "css" {
+    #snow{
+        background: none;
+        pointer-events: none;
+        background-image: url($s1), url($s2), url($s3);
+        background-size: 250px 250px, 200px 200px, 150px 150px;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 150;
 
-    animation: snow 10s linear infinite;
-    
-    @if is-light-color-scheme() {
-        filter: invert(50%);
+        animation: snow 10s linear infinite;
+        
+        @if is-light-color-scheme() {
+            filter: invert(50%);
+        }
+    }
+
+    @keyframes snow {
+        0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+        100% {background-position: 500px 1000px, 200px 400px, -150px 300px;}
+    }
+}@else{
+    .discoursesnow{
+        color: $primary-low-mid !important;
     }
 }
-
-@keyframes snow {
-    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-    100% {background-position: 500px 1000px, 200px 400px, -150px 300px;}
-}
-

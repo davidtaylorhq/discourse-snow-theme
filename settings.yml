@@ -1,0 +1,6 @@
+snow_type:
+  default: javascript
+  type: enum
+  choices:
+    - javascript
+    - css
