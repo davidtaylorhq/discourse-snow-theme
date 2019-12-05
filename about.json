@@ -1,0 +1,12 @@
+{
+  "name": "Discourse Snow Theme",
+  "about_url": null,
+  "license_url": null,
+  "author": "David Taylor",
+  "assets": {
+    "s1": "assets/s1.png",
+    "s2": "assets/s2.png",
+    "s3": "assets/s3.png"
+  },
+  "component": true
+}
