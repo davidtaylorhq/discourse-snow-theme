@@ -660,7 +660,7 @@
 
         // hooks for starting the snow
         if (storm.autoStart) {
-            storm.events.add(window, 'load', doStart, false);
+            storm.start(true);
         }
 
         return this;
