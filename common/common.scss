@@ -24,6 +24,6 @@
     }
 }@else{
     .discoursesnow{
-        color: $primary-low-mid !important;
+        color: var(--primary-low-mid) !important;
     }
 }
